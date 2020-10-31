@@ -109,10 +109,9 @@ def nivel_corredor():
             print("Infelizmente, atrás da porta estava o Frankenstein!")
             time.sleep(2)
             bom_ou_mau = random.randint(0, 3)
-            if bom_ou_mau != 0:
+            if bom_ou_mau == 0:
                 print("Dá-te uma marretada na cabeça e desfaz-te aos pedaços!")
-            else:
-                
+            else:                
                 print("Agarra em ti e leva-te para o seu castelo e prende-te nas masmorras...")
                 masmorras_frank()
         else:
