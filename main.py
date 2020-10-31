@@ -19,10 +19,15 @@ def mostra_banner():
 
 def masmorras_frank():
     print("Estás acorrentado numa parede fria.")
+    time.sleep(1)
     print("O Frankenstein está a chegar às masmorras...")
+    time.sleep(1)
     print('Frankenstein: "Tu és muito fraco rapaz! Não resistes nem a um murro meu, quanto mais a dias acorrentado!"')
+    time.sleep(1)
     print('Tu: "Cala-te! Eu vou escapar daqui! Tu vais ver!"')
+    time.sleep(1)
     print('Frankenstein: Hahahahaha! Tchau fracote!')
+    time.sleep(1)
     print("Passado algum tempo um rato aparece à tua frente com um ar esfomeado...")
     if inventario["queijo"]:
         print("Decides dar o teu pedaço de queijo ao rato...")
