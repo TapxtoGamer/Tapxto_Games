@@ -5,6 +5,16 @@ inventario = {
     'chave_porta_do_corredor': False
 }
 
+def mostra_banner():
+    print("""_______                                                            _______                     _______                                       
+(_______)                   _                                      (_______)                   (_______)           _                          
+ _______ _   _ _____ ____ _| |_ _   _  ____ _____    ____  _____    _       _____  ___ _____    _____ _____ ____ _| |_ _____  ___ ____  _____ 
+|  ___  | | | | ___ |  _ (_   _) | | |/ ___|____ |  |  _ \(____ |  | |     (____ |/___|____ |  |  ___|____ |  _ (_   _|____ |/___)    \(____ |
+| |   | |\ V /| ____| | | || |_| |_| | |   / ___ |  | | | / ___ |  | |_____/ ___ |___ / ___ |  | |   / ___ | | | || |_/ ___ |___ | | | / ___ |
+|_|   |_| \_/ |_____)_| |_| \__)____/|_|   \_____|  |_| |_\_____|   \______)_____(___/\_____|  |_|   \_____|_| |_| \__)_____(___/|_|_|_\_____|                                                                                                                                             
+    """)
+    print("=" * 50 + " V1.0 " + "=" * 50)
+
 def nivel_tres():
     print("Subiste as escadas e encontraste um sótão com três baús.")
     opcao = escolhe_opcao(
@@ -49,9 +59,6 @@ def nivel_dois():
                 print("Abriste a porta e escapaste da casa!")
                 print("Ganhaste!")
                 exit(0)
-
-
-            
         else:
             print("Lamento. A porta está trancada. Talvez devesses procurar uma chave...")
             nivel_dois()
@@ -83,6 +90,7 @@ def nivel_um():
 opcao_sair_ou_continuar = None
 
 while opcao_sair_ou_continuar != "s":
+    mostra_banner()
     mostra_introducao()
     nivel_um()
     print("Infelizmente morreste!")
