@@ -74,6 +74,7 @@ def nivel_cave():
     elif opcao == "d":
         if inventario["queijo"] or inventario["livro_de_bruxaria"]:
             print("Este buraco encontra-se vazio. Já tiraste tudo o que havia para tirar")
+            nivel_cave()
         else:
             queijo_ou_livro = random.randint(0, 1)
             if queijo_ou_livro == 0:
