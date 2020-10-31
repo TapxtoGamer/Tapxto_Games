@@ -5,7 +5,6 @@ inventario = {
     'chave_porta_do_corredor': False,
     'queijo': False,
     'livro_de_bruxaria': False
-    
 }
 
 def mostra_banner():
@@ -143,6 +142,8 @@ def nivel_quarto():
 opcao_sair_ou_continuar = None
 
 while opcao_sair_ou_continuar != "s":
+    for key in inventario.keys():
+        inventario[key] = False
     mostra_banner()
     mostra_introducao()
     nivel_quarto()
