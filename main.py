@@ -1,6 +1,7 @@
 import game_utils
 import casa_fantasma
 import adivinha_numero
+import trinca_espinhas
 
 def mostra_banner():
     print("""
@@ -18,9 +19,12 @@ opcao = None
 print('Jogos disponívels:')
 print('   - 1: Adivinha o número')
 print('   - 2: Aventura na Casa Fantasma')
-opcao = game_utils.escolhe_opcao("Que jogo queres jogar?", ["1", "2"])
+print('   - 3: Trinca-espinhas')
+opcao = game_utils.escolhe_opcao("Que jogo queres jogar?", ["1", "2", "3"])
 
 if opcao == "1":
     adivinha_numero.jogar()
 elif opcao == "2":
     casa_fantasma.jogar()
+elif opcao == "3":
+    trinca_espinhas.jogar()
