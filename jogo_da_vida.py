@@ -21,7 +21,7 @@ def criar_jogador():
     ESTADO_PERSONAGEM['dividas'] = 0
     imprimir_estado_jogador()
 
-
+    
 
 
 
