@@ -53,7 +53,7 @@ def nivel_sotao():
     elif opcao == "d":
         nivel_corredor()
     elif opcao == "m":
-        print("Dentro do baú consegues ver uma vassoura velha.")
+        print("Encontraste uma vassoura.")
         if inventario["livro_de_bruxaria"]:
             print("Com o teu livro de bruxaria transformaste a vassoura numa vassoura voadora e saíste dali para fora!")
             print("Parabéns!")
