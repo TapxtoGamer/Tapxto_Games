@@ -26,6 +26,7 @@ def criar_jogador():
 
 
 
+
 def imprimir_estado_jogador():
     print(f"""
     Nome: {ESTADO_PERSONAGEM['nome']}
